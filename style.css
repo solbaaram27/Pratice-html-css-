@@ -1,0 +1,106 @@
+
+/*
+a:link : a 태그 클릭 전
+a:visited : a 태그 클릭 후
+a:hover : a 태그 마우스 올렸을 때
+text-decoration : 밑줄 // 제거 시 none
+*/
+
+a:link { color: white; text-decoration: none;} 
+a:visited { color: white; text-decoration: none;}
+a:hover { color: blue; text-decoration: none;}
+
+.nav{
+    border: transparent;
+    border-radius: 10px;
+    background-image: url("https://i.pinimg.com/originals/22/4e/69/224e694ee3a37f176cd039a672027e21.jpg");
+    height:70px;
+    border-bottom: 1px solid black;
+    display: flex; /*내부 요소들 수평 정렬*/
+    align-items: center;
+    white-space: nowrap; /*화면 사이즈 조절 시 텍스트 한 줄로 나오게*/
+}
+.company-name{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.nav-right-items{
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-item{
+    font-weight: 500;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #007bff;
+    color: white;
+    padding: 15px; /*padding : 요소 내부 여백 // margin : 요소 외부 여백*/
+    border-radius: 3px;
+    border: transparent;
+    }
+
+.title{
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+}
+.subtitle{
+    text-align: center;
+    font-size: 40px;
+    font: weight 300;;
+}
+.main{
+    width: 800px;
+    margin: 0 auto; /*중앙 정렬, 좌우 여백 사이즈 같게 : 0은 상하여백 auto는 좌우여백을 같게 배분 */
+    margin-top: 60px;
+}
+.prices{
+    text-align: center;
+    display: flex;
+}
+.price-item{
+    width:300px;
+    height: auto;
+    border:1px solid black;
+    margin: 20px;
+    border-radius: 4px;
+}
+.price-item-title{
+    font-size: 30px;
+    font-weight: 500;
+    background-color: darkgrey;
+    text-align: center;
+    height:53px;
+    line-height:53px;
+    border-bottom: 1px solid black;
+}
+.price-item-price{
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+.price-item-detail{
+    
+}
+.price-item-button{
+    width:80%;
+    padding: .5rem 1rem;
+    font-size:1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    margin: 20px;
+    color:#007bff;
+    background-color: transparent;
+    background-image: none;
+    border-color: #007bff;
+    box-shadow: 5px 5px gray;
+
+}
+.price-item-button-active{
+    color:white;
+    background-color: #007bff;
+}
